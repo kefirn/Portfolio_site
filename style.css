@@ -4,30 +4,36 @@ body{
     justify-content: center;
 }
 section{
-    border: 1px solid white;
+    border: 1px solid grey;
     border-radius: 20px;
     display: flex;
     width: 610px;
     height: 270px;
     margin: 5%;
+    box-shadow: 1em 1em 1em grey;
 }
 #about{
-    /*display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: bisque;
 }
 #my_photo{
     border: 1px solid bisque;
     border-radius: 20px;
-    width: 150px;
-    height: 150px;
+    width: 30%;
+    height: 80%;
+    margin: 5%;
     background-image: url("Photo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+#about_me{
+    width: 50%;
+    height: 80%;
+}
 .project{
     /*display: flex;
     flex-wrap: wrap;
@@ -36,7 +42,7 @@ section{
 }
 
 #project-1{
-    border: 1px solid white;
+    border: 1px solid grey;
     border-radius: 20px;
     width: 100%;
     background-image: url("Project-1.jpg");
@@ -51,7 +57,7 @@ section{
 }
 
 #project-2{
-    border: 1px solid white;
+    border: 1px solid grey;
     border-radius: 20px;
     width: 100%;
     background-image: url("Project-2.jpg");
