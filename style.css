@@ -34,12 +34,6 @@ section{
     width: 50%;
     height: 80%;
 }
-.project{
-    /*display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;*/
-    
-}
 
 #project-1{
     border: 1px solid grey;
