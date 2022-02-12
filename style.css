@@ -15,6 +15,10 @@ section{
     cursor: pointer;
   }
 
+section:hover{
+  box-shadow: 2em 2em 1em grey;
+} 
+
 .card1__face--front {
     background-color: bisque;
     border: 1px solid bisque;
@@ -41,6 +45,21 @@ section{
     transform-style: preserve-3d;
   }
 
+#contact{
+  text-align: center;
+  font-size: xx-large;
+} 
+
+#icon{
+    width: 70%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("./pngegg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .card1, .card2, .card3 {
     position: relative;
     transition: transform 1s;
@@ -64,8 +83,12 @@ section{
   }
 
 .card1__face--back,.card2__face--back, .card3__face--back{
-    width: 98%;
-    transform: rotateY( 180deg );   
+    transform: rotateY( 180deg );
+    background-color: bisque;
+    border: 1px solid bisque;
+    border-radius: 20px;
+    text-align: center;
+    font-size: large;  
   }
 
 .card1.is-flipped, .card2.is-flipped, .card3.is-flipped {
@@ -80,4 +103,40 @@ section{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  @media screen and (max-width: 700px) {
+    section{
+      width: 450px;
+      height: 199px;
+    }
+    
+    #about_me{
+      font-size: small;
+    }
+    #contact{
+      font-size: medium;
+    } 
+    #icon{
+      width: 42%;
+      height: 30%;
+  }
+
+  .card1__face--back,.card2__face--back, .card3__face--back{
+    font-size: medium;  
+  }
+  }
+
+  @media screen and (max-width: 500px) {
+    section{
+      width: 310px;
+      height: 137px;
+    }
+    
+    #about_me{
+      font-size: x-small;
+    }
+   .card1__face--back,.card2__face--back, .card3__face--back{
+    font-size: small;  
+  }
   }
