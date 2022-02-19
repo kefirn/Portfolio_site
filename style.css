@@ -11,14 +11,15 @@ section{
     width: 610px;
     height: 270px;
     margin: 5%;
-    box-shadow: 1em 1em 1em grey;
-    cursor: pointer;
+    box-shadow: 1em 1em 1em grey;/*Visual effect - shadow behind card*/
+    cursor: pointer; /*Cursor change to pointer then it on the card*/
   }
-
+/*Visual effect - shadow behind card is increase if hover on card*/
 section:hover{
   box-shadow: 2em 2em 1em grey;
 } 
 
+/*Design for front side card1*/
 .card1__face--front {
     background-color: bisque;
     border: 1px solid bisque;
@@ -35,7 +36,6 @@ section:hover{
     background-position: center;
     background-size: cover;
   }
-
 #about_me{
     text-align: center;
     margin-left: 40%;
@@ -45,11 +45,11 @@ section:hover{
     transform-style: preserve-3d;
   }
 
+/*Design for backside card1*/
 #contact{
   text-align: center;
   font-size: xx-large;
 } 
-
 #icon{
     width: 70%;
     height: 50%;
@@ -60,18 +60,23 @@ section:hover{
     background-position: center;
     background-size: cover;
 }
+
+/*Visual effect - card rotation*/
 .card1, .card2, .card3 {
     position: relative;
-    transition: transform 1s;
+    transition: transform 1s; 
     transform-style: preserve-3d;
   }
 
+/*Hiden backside of face after rotation*/
 .card1__face, .card2__face, .card3__face {
     position: absolute;
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
   }
+
+/*Design for front side card2*/
 .card2__face--front{
     border: 1px solid grey;
     border-radius: 20px;
@@ -82,6 +87,7 @@ section:hover{
     background-size: cover;
   }
 
+/*Design for backside*/
 .card1__face--back,.card2__face--back, .card3__face--back{
     transform: rotateY( 180deg );
     background-color: bisque;
@@ -91,10 +97,12 @@ section:hover{
     font-size: large;  
   }
 
-.card1.is-flipped, .card2.is-flipped, .card3.is-flipped {
+/*Visual effect - card rotation*/
+.is-flipped {
     transform: rotateY(180deg);
   }
 
+/*Design for front side card3*/
 .card3__face--front{
     border: 1px solid grey;
     border-radius: 20px;
@@ -104,7 +112,7 @@ section:hover{
     background-position: center;
     background-size: cover;
   }
-
+/*Change sizes for screen width smaller than 700px*/
   @media screen and (max-width: 700px) {
     section{
       width: 450px;
@@ -120,13 +128,14 @@ section:hover{
     #icon{
       width: 42%;
       height: 30%;
-  }
+    }
 
-  .card1__face--back,.card2__face--back, .card3__face--back{
+    .card1__face--back,.card2__face--back, .card3__face--back{
     font-size: medium;  
-  }
+    }
   }
 
+/*Change sizes for screen width smaller than 500px*/
   @media screen and (max-width: 500px) {
     section{
       width: 310px;
